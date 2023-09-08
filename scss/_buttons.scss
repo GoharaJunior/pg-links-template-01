@@ -1,0 +1,19 @@
+/*=======================================
+ * Variações de botões de todo o projeto.
+ * ====================================== */
+
+
+.btn-orcamento {
+    color: $btn-orcamento;
+    background-color: transparent;
+    border: 1px solid $btn-orcamento;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all .3s ease;
+    padding: 11px 15px;
+    border-radius: 5px;
+    &:hover {
+        color: #fff;
+        background-color: $btn-orcamento;
+    }
+}

@@ -1,0 +1,52 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2022;
+    padding-top: 25px;
+    transition: all 0.3s ease;
+    &.fixed-menu {
+        background-color: #071126;
+        padding-bottom: 29px;
+        transition: all 0.3s ease;
+        overflow: hidden;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        z-index: 35;
+        img {
+            width: 100%;
+            max-width: 182px;
+            min-width: 182px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        nav {
+            max-width: 100%;
+            margin-left: 0;
+            display: flex;
+            justify-content: flex-end;
+            ul {
+                display: none;
+            }
+        }
+
+        .hamburger {
+            display: block
+        }
+    }
+
+    @media (max-width: 500.1px) {
+        &:before {
+            left: -50%;
+        }
+    }
+}

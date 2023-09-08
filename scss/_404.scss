@@ -1,0 +1,61 @@
+.s-404, body {
+    height: 100vh;
+}
+
+#page-404 body {
+    background: url('../img/pg-not-found-bg.jpg') no-repeat center center/cover;
+}
+
+.s-404 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 42%;
+    margin: 0 auto;
+    
+    main {
+        max-width: 23.75rem;
+        color: #D6D6F2;
+    }
+
+    aside {
+        display: flex;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 120%;
+    }
+
+    p {
+        margin-top: 1.5rem;
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 140%;
+    }
+
+    .button-wrapper {
+        margin-top: 3.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            background: #151557;
+            border-radius: 62.4375rem;
+            color: #E2E2F5;
+            font-weight: 500;
+            line-height: 140%;
+            text-transform: uppercase;
+            &:hover {
+                background: #212187;
+            }
+        }
+    }
+}
