@@ -19,22 +19,41 @@
         linksSlides: function() {
             const swiper = new Swiper(".slide-links", {
                 slidesPerView: 3,
-                spaceBetween: 32,
+                spaceBetween: 15,
                 grabCursor: true,
                 pagination: {
                     el: ".s-links .slide-links .swiper-pagination",
                     clickable: true,
                 },
                 breakpoints: {
-                    // 320: {
-                    //     slidesPerView: 1.5,
-                    //     spaceBetween: 16,
-                    // },
-                    // 600: {
-                    //     slidesPerView: 2.5,
-                    //     spaceBetween: 15,
-                    // },
-                    1200: {
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 16,
+                    },
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 16,
+                    },
+                    390: {
+                        slidesPerView: 1.2,
+                    },
+                    420: {
+                        slidesPerView: 1.3,
+                        spaceBetween: 15,
+                    },
+                    540: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 15,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 32,
+                    },
+                    830: {
+                        slidesPerView: 2.5,
+                        spaceBetween: 32,
+                    },
+                    1030: {
                         slidesPerView: 3,
                         spaceBetween: 32,
                     }
