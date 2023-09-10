@@ -2,10 +2,14 @@
  * Aqui vão todas as variáveis que serão utilizadas.
  * ================================================= */
 
- // Cores principais
-$blue-brand: #00A8FF;
-$btn-orcamento: #00A8FF;
+// Fontes
+$prata: 'Prata', serif;
+$poppins: 'Poppins', sans-serif;
 
+ // Cores principais
+$green-brand: #61CE70;
+$btn-orcamento: #00A8FF;
+$text-defaul: #2b343b;
 
 // Escalas de cinzas
 $gray-600: #33303E;
@@ -14,3 +18,7 @@ $gray-400: #5F5C6B;
 $gray-300: #7A7786;
 $gray-200: #C6C5CE;
 $gray-100: #F1F0F5;
+
+
+// Transition
+$transition: all 0.3s ease;

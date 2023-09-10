@@ -2,18 +2,68 @@
  * Variações de botões de todo o projeto.
  * ====================================== */
 
-
 .btn-orcamento {
-    color: $btn-orcamento;
+    color: $green-brand;
     background-color: transparent;
-    border: 1px solid $btn-orcamento;
+    border: 1px solid $green-brand;
     font-size: 16px;
     font-weight: 500;
     transition: all .3s ease;
     padding: 11px 15px;
     border-radius: 5px;
+    font-family: $poppins;
     &:hover {
         color: #fff;
-        background-color: $btn-orcamento;
+        background-color: $green-brand;
+    }
+
+    @media (max-width: 500.1px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 320.1px) {
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+}
+
+.btn-consulte-mais-informacoes {
+    position: relative;
+    color: $text-defaul;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+    font-family: $poppins;
+    &:hover {
+        color: $green-brand;
+        &:after {
+            width: 100%;
+            right: auto;
+            left: 0;
+        }
+    }
+    &:before {
+        position: absolute;
+        content: "";
+        bottom: -3px;
+        left: auto;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #efefef;
+        transition: all 0.3s ease 0s;
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        bottom: -3px;
+        left: auto;
+        right: 0;
+        width: 0;
+        height: 2px;
+        background-color: $green-brand;
+        transition: all 0.3s ease 0s;
     }
 }

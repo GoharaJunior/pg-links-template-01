@@ -21,6 +21,7 @@
                 slidesPerView: 3,
                 spaceBetween: 15,
                 grabCursor: true,
+                allowSlideClick: true,
                 pagination: {
                     el: ".s-links .slide-links .swiper-pagination",
                     clickable: true,
@@ -43,15 +44,15 @@
                     },
                     640: {
                         slidesPerView: 2,
-                        spaceBetween: 32,
+                        spaceBetween: 15,
                     },
                     830: {
                         slidesPerView: 2.5,
-                        spaceBetween: 32,
+                        spaceBetween: 15,
                     },
                     1030: {
                         slidesPerView: 3,
-                        spaceBetween: 32,
+                        spaceBetween: 15,
                     }
                 }
             });

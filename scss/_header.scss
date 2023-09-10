@@ -7,10 +7,28 @@ header {
     padding-top: 25px;
     transition: all 0.3s ease;
     &.fixed-menu {
-        background-color: #071126;
+        background-color: #2b343bf7;
         padding-bottom: 29px;
         transition: all 0.3s ease;
         overflow: hidden;
+        .logo {
+            background: url('../img/nutrition-logo.png') no-repeat center center;
+            display: inline-block;
+            width: 200px;
+            height: 70px;
+            background-size: 100%;
+            transition: background-image .3s;
+            
+        }
+    }
+
+    .logo {
+        display: inline-block;
+        width: 200px;
+        height: 70px;
+        background: url('../img/nutrition-logo-black.png') no-repeat center center;
+        background-size: 100%;
+        transition: background-image .3s;
     }
 
     .container {
@@ -44,9 +62,47 @@ header {
         }
     }
 
+    @media (max-width: 521px) {
+        .logo {
+            margin-bottom: 20px;
+        }
+        .container {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
     @media (max-width: 500.1px) {
+        padding-top: 15px;
         &:before {
             left: -50%;
+        }
+        &.fixed-menu {
+            padding-bottom: 15px;
+            .logo {
+                width: 160px;
+                height: 60px;
+            }
+        }
+        .logo {
+            width: 160px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    @media (max-width: 320.1px) {
+        padding: 10px 0;
+        &.fixed-menu {
+            padding-bottom: 15px;
+            .logo {
+                width: 130px;
+                height: 45px;
+            }
+        }
+        .logo {
+            width: 130px;
+            height: 45px;
         }
     }
 }

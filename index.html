@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fonts import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- five icon -->
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <!-- css imports -->
     <link rel="stylesheet" href="./css/plugins.css">
     <link rel="stylesheet" href="./css/main.min.css">
     <!-- Primary Meta Tags -->
-    <title>Base Clean</title>
+    <title>Health & Nutrition - Site Oficial</title>
     <meta name="title" content="Base Clean" />
     <meta name="description" content="Colocar descrição do projeto no qual esta trabalhando" />
     <!-- Open Graph / Facebook -->
@@ -34,27 +38,45 @@
 
     <header id="js-header">
         <div class="container">
-            <a class="logo" href="./">
-                <img src="./img/jhon-doe-logo.svg" alt="Jhon Doe Logo">
-            </a>
-            
-            <a class="btn-orcamento" href="#faq">Faça seu orçamento</a>
+            <a class="logo" href="./"></a>
+            <a class="btn-orcamento" href="#faq">Quero tirar dúvidas pontuais</a>
         </div>
     </header>
 
-    <section class="s-hero">
+    <section class="s-hero s-hero-bg-mobile">
         <div class="container">
-            <div class="left">
-                <h1><span>Web Designer</span> de lançamento e infoprodutos</h1>
-                <h3>Criando <span>Experiências</span> Online Impactantes para o Seu Sucesso</h3>
+            <div class="s-hero-center">
+                <div class="s-hero-photo" data-aos="fade-down">
+                    <img src="./img/photo-perfil.png" alt="">
+                </div>
+                <div class="s-hero-icons" data-aos="fade-down" data-aos-offset="0">
+                    <ul>
+                        <a href="#">
+                            <li><img src="./img/instagram-icon-01.png" target="_blank" rel="noopener noreferrer" alt="Ícone do Instagram"></li>
+                            <li><img src="./img/facebook-icon-02.png" target="_blank" rel="noopener noreferrer" alt="Ícone do Facebook"></li>
+                        </a>
+                    </ul>
+                </div>
+                <h1 data-aos="fade-up" data-aos-delay="150" data-aos-offset="0">
+                    Nutrindo com escolhas de <span>alimentos</span> saudáveis
+                    <!-- 
+                    <span class="ic-search">
+                        <div class="alert-show">
+                            É possível alterar esse título
+                        </div>
+                    </span>
+                    -->
+                </h1>
+                <p data-aos="fade-up" data-aos-delay="250" data-aos-offset="0">Os Serviços de Nutrição estão comprometidos em fornecer opções de alimentos saudáveis e saborosos para você e sua família.</p>
             </div>
         </div>
     </section>
 
     <section class="s-links">
         <div class="container">
-            <div class="s-links-titles" data-aos="fade-right">
+            <div class="s-links-titles" data-aos="fade-down" data-aos-delay="350" data-aos-offset="0">
                 <h2>Opa! <span>Links</span> que irão te ajudar 😊</h2>
+                <p>Se você busca um ambiente colaborativo e dinâmico, apreciará uma cultura inovadora e focada em resultados, impulsionada pelos fatos.</p>
             </div>
 
             <div class="slide-links" data-aos="fade-up">
@@ -62,12 +84,12 @@
                     <div class="swiper-slide">
                         <div class="s-links-item">
                             <figure>
-                                <img src="./img/img-test.png" alt="">
+                                <img src="./img/programa-perca-de-peso.jpeg" alt="">
                             </figure>
                             <div class="s-links-info">
-                                <h3>Criativos / Posts</h3>
-                                <p>Design para seus criativos de anúncios, posts para suas redes sociais.</p>
-                                <a class="btn-orcamento" href="#faq">Quero Orçamento!</a>
+                                <h3>Emagrecimento saudável</h3>
+                                <p>O processo de perda de peso não significa lutar pelo corpo, mas sim tornar a alimentação saudável um hábito completamente natural.</p>
+                                <a class="btn-consulte-mais-informacoes" href="https://api.whatsapp.com/send?phone=5514999066665&text=Olá! Estou interessado em obter informações sobre emagrecimento saudável.">Consulte mais informações</a>
                             </div>
                         </div>
                     </div>
@@ -75,12 +97,12 @@
                     <div class="swiper-slide">
                         <div class="s-links-item">
                             <figure>
-                                <img src="./img/img-test.png" alt="">
+                                <img src="./img/rotina-de-exercicios.jpeg" alt="">
                             </figure>
                             <div class="s-links-info">
-                                <h3>Área de Membros</h3>
-                                <p>Tenha sua área de membros totalmente personalizada, seu cliente merece a melhor experiência</p>
-                                <a class="btn-orcamento" href="#faq">Quero Orçamento!</a>
+                                <h3>Rotinas de exercícios</h3>
+                                <p>Descubra uma variedade de rotinas de exercício cuidadosamente elaboradas para atender às suas metas de condicionamento físico.</p>
+                                <a class="btn-consulte-mais-informacoes" href="#faq">Consulte mais informações</a>
                             </div>
                         </div>
                     </div>
@@ -88,12 +110,12 @@
                     <div class="swiper-slide">
                         <div class="s-links-item">
                             <figure>
-                                <img src="./img/img-test.png" alt="">
+                                <img src="./img/nutricao-esportiva.jpeg" alt="">
                             </figure>
                             <div class="s-links-info">
-                                <h3>Landing Pages</h3>
-                                <p>Garanta uma página de alto nível, aumente o valor do seu produto e alcance um volume de vendas muito maior.</p>
-                                <a class="btn-orcamento" href="#faq">Quero Orçamento!</a>
+                                <h3>Nutrição esportiva</h3>
+                                <p>Descubra o segredo por trás do desempenho máximo com nossa especialização em nutrição esportiva.</p>
+                                <a class="btn-consulte-mais-informacoes" href="#faq">Consulte mais informações</a>
                             </div>
                         </div>
                     </div>
@@ -101,12 +123,12 @@
                     <div class="swiper-slide">
                         <div class="s-links-item">
                             <figure>
-                                <img src="./img/img-test.png" alt="">
+                                <img src="./img/nutricao-pessoal.jpeg" alt="">
                             </figure>
                             <div class="s-links-info">
-                                <h3>Sites institucionais</h3>
-                                <p>Criação de sites institucionais que são profissionais, modernos e personalizado em cada detalhe.</p>
-                                <a class="btn-orcamento" href="#faq">Quero Orçamento!</a>
+                                <h3>Nutrição pessoal</h3>
+                                <p>Inicie sua jornada em direção a uma vida mais saudável e equilibrada com a orientação e adaptada exclusivamente para você.</p>
+                                <a class="btn-consulte-mais-informacoes" href="#faq">Consulte mais informações</a>
                             </div>
                         </div>
                     </div>
@@ -114,12 +136,6 @@
 
                 <div class="swiper-pagination"></div>
             </div>
-
-            <!--
-            <div class="s-links-bottom">
-                <div class="swiper-pagination"></div>
-            </div>
-            -->
         </div>
     </section>
 
@@ -127,17 +143,13 @@
         <div class="container">
             <div class="partners">
                 <div class="msg">
-                    <p>Desenvolvido por:</p> 
+                    <p>Design & Programação por:</p> 
                     <a class="image" href="https://gohara.netlify.app/" target="_blank">
                         <img src="./img/gohara-pixel-logo.png" alt="Logo de Gohara desenvolvedor">
                     </a>
                 </div>
 
-                <p class="copy">Copyright 2023 © John Doe | Todos os direitos reservados</p>
-                <div class="copy-mobile">
-                    <p>Copyright © Lucas & Viana 2023</p>
-                    <p>Todoso os direitos reservados</p>
-                </div>
+                <p class="copy">Copyright 2023 © Health & Nutrition | Todos os direitos reservados</p>
             </div>
         </div>
     </footer>

@@ -1,3 +1,69 @@
 /*=======================================
  * Componentes que se repetem no projeto.
  * ====================================== */
+
+
+ /* Icon 'i' for Settings */
+.ic-search{
+    position: absolute;
+    left: 0;
+    top: -30px;
+    z-index: 6;
+    width: 26px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: -3px;
+    background: url("data:image/svg+xml,%3Csvg fill='%23113966' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 510 510'%3E%3Cpath d='M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255s255-114.75,255-255S395.25,0,255,0z M280.5,382.5h-51v-153h51V382.5z M280.5,178.5h-51v-51h51V178.5z'/%3E%3C/svg%3E") no-repeat;
+}
+
+.ic-search .alert-show{
+    position: absolute;
+    margin-left: 20px;
+    background-color: #474e5f;
+    border-radius: 6px;
+    padding: 20px;
+    color: #fff;
+    font-size: 12px;
+    transform: scale(.6);
+    transform-origin: top left;
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-in-out .2s;
+    transition-delay: .2s;
+    width: 274px;
+    font-weight: 400;
+    z-index: 5;
+}
+
+.ic-search:hover .alert-show{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition-delay: .0s;
+}
+
+.ic-search .alert-show::before{
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #474e5f;
+}
+
+.ic-search .link{
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.ic-search .link::before{
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg fill='%23fff' xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg transform='translate(0 -3)'%3E%3Cg transform='translate(-.258 2.742)'%3E%3Cpath d='M16.034 6.97l-2.049-.27a5.9 5.9 0 0 0-.574-1.383l1.256-1.647a.258.258 0 0 0-.022-.339l-1.46-1.46a.257.257 0 0 0-.339-.022L11.2 3.106a5.9 5.9 0 0 0-1.38-.574L9.546.482A.258.258 0 0 0 9.29.258H7.226a.258.258 0 0 0-.256.224l-.27 2.05a5.9 5.9 0 0 0-1.383.574L3.67 1.849a.257.257 0 0 0-.339.022l-1.46 1.46a.258.258 0 0 0-.022.339l1.257 1.643A5.9 5.9 0 0 0 2.532 6.7l-2.05.27a.258.258 0 0 0-.224.256V9.29a.258.258 0 0 0 .224.256l2.05.273a5.9 5.9 0 0 0 .573 1.381l-1.256 1.646a.258.258 0 0 0 .022.339l1.46 1.46a.258.258 0 0 0 .339.022l1.643-1.257a5.9 5.9 0 0 0 1.383.574l.273 2.05a.258.258 0 0 0 .256.224H9.29a.258.258 0 0 0 .256-.224l.273-2.05a5.9 5.9 0 0 0 1.383-.574l1.643 1.257a.258.258 0 0 0 .339-.022l1.46-1.46a.258.258 0 0 0 .022-.339L13.411 11.2a5.9 5.9 0 0 0 .574-1.383l2.05-.273a.258.258 0 0 0 .224-.256V7.226a.258.258 0 0 0-.225-.256zm-7.776 3.611a2.323 2.323 0 1 1 2.323-2.323 2.322 2.322 0 0 1-2.323 2.323z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: -4px;
+}

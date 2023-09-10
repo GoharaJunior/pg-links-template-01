@@ -1,5 +1,5 @@
 footer {
-    background-color: #000;
+    background-color: #252D32;
     
     .container {
         display: flex;
@@ -38,29 +38,12 @@ footer {
         text-align: center;
 
         .copy {
-            font-size: 13px;
+            font-size: 14px;
             color: #fff;
-            &-mobile {
-                display: none;
-            }
         }
     }
 
     @media (max-width: 500.1px) {
-        .partners {
-            .copy {
-                display: none;
-                &-mobile {
-                    color: #fff;
-                    display: block;
-                    p {
-                        &:not(:last-child) {
-                            margin-bottom: 5px;
-                        }
-                    }
-                }
-            }
-        }
         .msg {
             flex-direction: column;
             p {
