@@ -23,23 +23,23 @@
     }
 
     &-icons {
-        display: flex;
-        justify-content: center;
         width: 100%;
         max-width: 100%;
         margin-top: 20px;
         ul {
+            display: flex;
+            justify-content: center;
             a {
                 display: flex;
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
                 li {
                     transition: $transition;
                     @media (min-width: 768px) {
                         &:hover {
                             transform: scale(1.2);
                         }
-                    }
-                    &:not(:last-child) {
-                        margin-right: 10px;
                     }
                 }
             }

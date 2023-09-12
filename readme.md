@@ -1,6 +1,6 @@
 <h1 align="center">
     <br>
-        <img src=".github/logo-clean-base.png">
+        <img src=".github/thumbnail.png">
     <br>
 </h1>
 <!-- <p align="center"> Visualize o projeto:

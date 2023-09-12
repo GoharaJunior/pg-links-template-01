@@ -57,6 +57,19 @@
                 }
             });
         },
+
+        scrollToTopSmoothly: function() {
+            const logo = document.getElementById("logo");
+
+            logo.addEventListener("click", (event) => {
+                event.preventDefault()
+                
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        }
     };
 
     // Execução de Funções após o carregamento do documento
@@ -71,6 +84,7 @@
 
             theme.menuFixed();
             theme.linksSlides();
+            theme.scrollToTopSmoothly();
         }
     });
 })();
